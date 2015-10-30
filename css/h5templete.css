@@ -1,0 +1,305 @@
+﻿/*reset*/
+body,div,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dt,dd,form,iframe,input,textarea,select,label,article,aside,footer,header,menu,nav,section,time,audio,video,button{margin:0;padding:0}
+article,aside,footer,header,hgroup,nav,section,audio,canvas,video,img{display:block}
+body{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+textarea{resize:none}
+iframe,img{border:0}
+ul,ol{list-style:none}
+input,select,textarea{outline:0;-webkit-user-modify:read-write-plaintext-only}
+input{-webkit-appearance:none}
+a{text-decoration:none}
+/*page*/
+body,html{width:100%;height:100%;position:relative;overflow:hidden;-webkit-backface-visibility:hidden}
+html{font-size: 62.5%;}
+body{font:1.6rem Arial,'Microsoft Yahei';color:#fff;background:#000;min-width:320px;}
+section,article{display:block}
+/*loadPage*/
+.loadPage{background:#000;z-index:9999;width:100%;position:absolute;top:0;bottom:0;height:100%}
+.loading{position:absolute;width:80%;left:10%;top:200px;margin:0px auto;text-align:center;margin-top:-15px}
+.loading-num{height:25px;font-size:0.875em;text-align:center;color:#fff}
+.loading-num span{margin-right:10px}
+.loading-num b{font-weight:100}
+.loading .inner{background-color:#CCC;border-radius:5px;overflow:hidden;background-color:#FFF;position:relative;z-index:10}
+.loading-progress{width:0;height:2px;text-align:center;background-color:#a30000;color:#FFF}
+
+/*布局 开始*/
+.global{position:relative;height:100%;width:100%;-webkit-transform-style:preserve-3d;-webkit-backface-visibility:hidden;z-index:0}
+.screen{-webkit-transform-style:preserve-3d}
+.ease{-webkit-transition:all 1.0s ease-in-out}
+.layout{
+  position:relative;
+  overflow:hidden;
+ /* background:#000000;*/
+ /* background:red;*/
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -zom-transform-style: preserve-3d;
+}
+.swipe_tip{position:absolute;left:8rem;bottom:0.225rem;width:1.025rem;height:0.525rem;z-index:5;margin:0 0 0 -0.525rem;background:url(../images/swipe_up.png) no-repeat;background-size:1.025rem 0.525rem}
+.layout .ft{position:absolute;width:16rem;bottom:0}
+.layout .ft .swipe_tip{bottom:0.225rem;width:1.025rem;height:0.525rem;background:url(../images/swipe_up.png) no-repeat;background-size:1.025rem 0.525rem}
+.content{position:absolute;}
+/* 布局结束 */
+/*背景 开始*/
+.layer_bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 16rem;
+  height: 100%;
+  z-index:0
+}
+.animate .layer_bg{
+ /* -webkit-animation: opa3 1.5s ease-in-out both;
+  -moz-animation: opa3 1.5s ease-in-out both;*/
+}
+/*背景 结束*/
+/* 箭头 开始 */
+.swipe_tip{position:absolute;left:8rem;top:26.85rem;width:1.025rem;height:0.525rem;z-index:5;margin:0 0 0 -0.525rem;background:url(../images/swipe_up.png) no-repeat;background-size:1.025rem 0.525rem}
+@media (max-height:630px) {
+  .swipe_tip{
+    top:24rem;
+  }
+}
+@media (max-height:600px) {
+  .swipe_tip{
+    top:23rem;
+  }
+}
+@media (max-height:555px) {
+  .swipe_tip{
+    top:22rem;
+  }
+}
+@-webkit-keyframes fadeOutUp{
+  0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}
+  50%{opacity:0.3;-webkit-transform:translateY(-0.5rem);transform:translateY(-0.5rem)}
+}
+@keyframes fadeOutUp{
+  0%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+  50%{opacity:0.3;-webkit-transform:translateY(-0.5rem);-ms-transform:translateY(-0.5rem);transform:translateY(-0.5rem)}
+}
+.layout .ft .swipe_tip{bottom:0.225rem;width:1.025rem;height:0.525rem;background:url(../images/swipe_up.png) no-repeat;background-size:1.025rem 0.525rem}
+.swipe_tip{-webkit-animation:2s fadeOutUp ease-in-out infinite;-moz-animation:2s fadeOutUp ease-in-out infinite}
+/* 箭头 结束 */
+
+
+/* 第一屏  开始*/
+#swipe_tip_first{visibility:hidden}
+.sec01-1{
+  width:4.925rem;
+  height:1.625rem;
+  top:11.25rem;
+  left:6.8rem;
+}
+.sec01-2{
+  width:4.3rem;
+  height:2.15rem;
+  top:11rem;
+  left:6rem;
+}
+.sec01-3{
+  width:2.4rem;
+  height:0.7rem;
+  top:13.5rem;
+  left:6.825rem;
+}
+/* 第一屏  结束*/
+
+/* 第二屏 开始*/
+.sec02-1{
+  width:13.8rem;
+  height:1.65rem;
+  top:1.8rem;
+  left:1.1rem;
+}
+.sec02-2{
+  width:14.375rem;
+  height:3.425rem;
+  left:1.1rem;
+  top:3.5rem;
+}
+.sec02-3{
+  width:4.5rem;
+  height:2.9rem;
+  left:2.9rem;
+  top:8.8rem;
+}
+.sec02-4{
+  width:5.1rem;
+  height:3.5rem;
+  left:9.4rem;
+  top:9rem;
+}
+
+/* 第二屏  结束*/
+
+/* 第三屏  开始*/
+.sec03-1{
+  width:14.4rem;
+  height:5.45rem;
+  left:1.1rem;
+  top:1rem;
+}
+.sec03-2{
+  width:3.75rem;
+  height:3.1rem;
+  left:2.325rem;
+  top:8.675rem;
+}
+.sec03-3{
+  width:3.5rem;
+  height:4.5rem;
+  left:10.2rem;
+  top:6.55rem;
+}
+.sec03-4{
+  width:4.2rem;
+  height:0.7rem;
+  left:4rem;
+  bottom:8.6rem;
+  z-index: 1;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.sec03-5{
+  width:10.65rem;
+  height:11.5rem;
+  left:0;
+  bottom: 0;
+}
+
+/* 第三屏  结束*/
+
+/* 第四屏  开始*/
+#layout_4 .sec04-1{top:1.35rem;left: 1rem;width:13.3rem;height: 5.275rem}
+#layout_4 .sec04-2{top:7rem;left: 3.25rem;width:3.4rem;height: 3rem}
+#layout_4 .sec04-3{top:6.35rem;left: 8rem;width:3.325rem;;height: 3rem}
+#layout_4 .sec04-4{top:10.35rem;left: 6rem;width:3.65rem;height: 3.05rem;}
+
+/* 第四屏  结束*/
+
+/* 第五屏  开始*/
+#layout_5 .sec06_tit{font-size:1rem;color:#3ac14b;top:0.75rem;left: 6.5rem;font-weight:normal;}
+#layout_5 .sec05-1{left:1.82rem;top:1rem;width:12.125rem;height: 6.35rem}
+#layout_5 .sec05-2{left:2.6rem;top:9.6rem;width:11.25rem;height: 5.55rem}
+#layout_5 .sec05-3{left:4.6rem;top:10.3rem;width:6.7rem;height: 4.25rem}
+#layout_5 .sec05-4{left:10.9rem;top:10.1rem;width:6rem;height: 4.575rem}
+#layout_5 .sec05-5{left:1.9rem;top:16.5rem;width:12.15rem;height: 3.275rem}
+#layout_5 .sec05-6{left:4rem;top:21.5rem;width:6.5rem;height: 2.05rem}
+/* 第五屏  结束*/
+
+/* 第六屏  开始*/
+#layout_6 .sec06_tit{font-size:1rem;color:#3ac14b;top:0.75rem;left: 6.5rem;font-weight:normal;}
+#layout_6 .sec06-1{left:0.82rem;top:2rem;width:14.1rem;height: 4.75rem}
+#layout_6 .sec06-2{left:1rem;top:8rem;width:14.1rem;height: 5.53rem}
+#layout_6 .sec06-3{left:1rem;top:14.8rem;width:14.1rem;height: 5.15rem}
+#layout_6 .sec06-4{left:2.9rem;bottom:2rem;width:9.325rem;height: 2.55rem}
+
+
+
+/* 第六屏  结束*/
+
+/* 第七屏  开始*/
+#layout_7 .sec07-1{left:1.82rem;top:2rem;width:12.9rem;height: 1.35rem;z-index: 1}
+#layout_7 .sec07-2{width:1.4rem;height: 1.5rem;z-index: 1}
+#layout_7 .sec07-2-1{left:3rem;top:5.5rem}
+#layout_7 .sec07-2-2{left:3rem;top:9.3rem}
+#layout_7 .sec07-2-3{left:3rem;top:13.5rem}
+#layout_7 .sec07-3{left:5rem;top:5.8rem;width:7.05rem;height: 1rem;z-index: 1}
+#layout_7 .sec07-4{left:4.9rem;top:9rem;width:7.725rem;height: 2.225rem;z-index: 1}
+#layout_7 .sec07-5{left:4.4rem;top:13.4rem;width:7.725rem;height: 2.1rem;z-index: 1}
+#layout_7 .sec07-6{left:1.5rem;top:18rem;width:12.9rem;height: 4.075rem;z-index: 1}
+#layout_7 .sec07-7{left:3.6rem;bottom:1.8rem;width:9.125rem;height: 1.9rem;z-index: 1}
+#layout_7 .sec07-8{left:1.5rem;top:4rem;width:13.15rem;height: 12.85rem}
+/* 第七屏  结束*/
+/* 第8屏  开始*/
+#layout_8 .sec08-1{left:1.8rem;top:1.1rem;width:3.35rem;height: 3.35rem;z-index: 1}
+#layout_8 .sec08-2{left:3.9rem;top:2.375rem;width:8.15rem;height: 16.3rem;
+ }
+#layout_8 .sec08-3{left:0.5rem;top:6.45rem;width:8.95rem;height: 6.375rem;z-index: 1; -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;}
+#layout_8 .sec08-4{left:0.625rem;bottom:0.7rem;width:14.7rem;height: 5.125rem;z-index: 1}
+/* 第8屏  结束*/
+/* 第9屏  开始*/
+#layout_9 .sec09-1{left:1.8rem;top:1.1rem;width:3.35rem;height: 3.35rem;z-index: 1}
+#layout_9 .sec09-2{left:3.9rem;top:2.375rem;width:8.15rem;height: 16.3rem;
+}
+#layout_9 .sec09-3{left:2.5rem;top:8.8rem;width:11.375rem;height: 3.375rem;z-index: 1; -webkit-transform-origin: right center;
+  -moz-transform-origin:  center top ;
+  -ms-transform-origin:  center top;
+  -o-transform-origin: center top;
+  transform-origin:  center top;}
+#layout_9 .sec09-4{left:0.625rem;bottom:1rem;width:14.7rem;height: 5.125rem;z-index: 1}
+/* 第9屏  结束*/
+
+/* 第10屏  开始*/
+#layout_10 .sec10-1{left:1.8rem;top:1.1rem;width:3.35rem;height: 3.35rem;z-index: 1}
+#layout_10 .sec10-2{left:3.9rem;top:2.375rem;width:8.15rem;height: 16.3rem;
+}
+#layout_10 .sec10-3{left:2.5rem;top:8.8rem;width:11.375rem;height: 3.375rem;z-index: 1; -webkit-transform-origin: right center;
+  -moz-transform-origin:  center top ;
+  -ms-transform-origin:  center top;
+  -o-transform-origin: center top;
+  transform-origin:  center top;}
+#layout_10 .sec10-4{left:0.625rem;bottom:1rem;width:14.7rem;height: 5.125rem;z-index: 1}
+/* 第10屏  结束*/
+
+/* 第11屏  开始*/
+#layout_11 .sec11-1{left:4.9rem;top:6.4rem;height:9rem;width: 6.25rem;z-index: 1}
+#layout_11 .sec11-2{left:3.9rem;top:2.375rem;width:8.15rem;height: 16.3rem;
+}
+#layout_11 .sec11-3{left:5.7rem;top:7.25rem;width:4.6rem;height: 7.275rem;z-index: 3; -webkit-transform-origin:  center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;}
+#layout_11 .sec11-4{left:0.625rem;bottom:0.625rem;width:14.7rem;height: 5.125rem;z-index: 1}
+/* 第11屏  结束*/
+
+
+/* 第12屏  开始*/
+#layout_12 .sec12-1,#layout_12 .sec12-1-warp{left:1rem;top:9.4rem;height:1.875rem;width: 13.225rem;z-index: 1}
+#layout_12 .sec12-1-warp{overflow: hidden;position: absolute}
+#layout_12 .sec12-1{left: 0;top: 0}
+#layout_12 .sec12-4{left:5rem;bottom:2.625rem;width:6rem;height: 0.75rem;z-index: 1}
+/* 第12屏  结束*/
+
+
+
+
+/*动画设置*/
+.swipe_tip,.fadeOutUp{-webkit-animation:2s fadeOutUp ease-in-out infinite;-moz-animation:2s fadeOutUp ease-in-out infinite}
+.logo,.animate .logo{-webkit-animation:bounceInDown 1s 1s ease both;-moz-animation:bounceInDown 1s 1s ease both}
+.picTxtone,.animate .picTxtone,.fhlogo,.animate .fhlogo{-webkit-animation:fadeInUp 1s 1.2s ease both;-moz-animation:fadeInUp 1s 1.2s ease both}
+.animate .shadeTxt{-webkit-animation:opa 1s 2s ease both;-moz-animation:opa 1s 2s ease both}
+.animate .picTxt,.animate .videoimg,.animate .blogo {-webkit-animation:fadeInUp 1s 1.5s ease both;-moz-animation:fadeInUp 1s 1.5s ease both}
+.animate .pptit{-webkit-animation:fadeInDown 1s 1s ease both;-moz-animation:fadeInDown 1s 1s ease both}
+.animate .ft{-webkit-animation:opa 2s 1.5s ease both infinite;-moz-animation:opa 2s 1.5s ease both infinite}
+.animate .btn-bm{-webkit-animation:bounceInDown 1s 1.5s ease both;-moz-animation:bounceInDown 1s 1.5s ease both}
+.animate .sharebox{-webkit-animation:opa 1s 1.5s ease both;-moz-animation:opa 1s 1.5s ease both}
+
+/*横屏提示*/
+.mask{width:100%;height:100%;background:#32373b;position:absolute;left:0;top:0;z-index:99999;display:none}
+.mask-box{width:100%;height:252px;position:absolute;top:50%;left:0;margin-top:-119px}
+.mask-pic{width:194px;height:194px;margin:0 auto;text-align:center}
+.mask span{font-size:15px;display:block;color:#fff;text-align:center;width:100%;height:25px;padding-top:10px}
+.mask i{width:100px;height:163px;background:url(../images/bg6.png) 0 0 no-repeat;background-size:100px 163px;display:block;margin:0 auto;-webkit-animation:maskAni 1.5s ease infinite alternate;animation:maskAni 1.5s ease infinite alternate}
+@-webkit-keyframes maskAni{
+0% {-webkit-transform:rotate(-90deg)}
+30% {-webkit-transform:rotate(-90deg)}
+70%{-webkit-transform:rotate(0deg)}
+100% {-webkit-transform:rotate(0deg)}
+}
+
+/*兼容横屏*/
+@media all and (orientation : landscape) {
+.mask{display:block}
+}
+/*兼容iphone4/4s */ 
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){
+}
+

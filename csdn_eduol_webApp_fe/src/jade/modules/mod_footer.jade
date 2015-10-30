@@ -1,0 +1,50 @@
+footer#footer
+
+    span.warp_span
+        a.index(href="#")
+            span
+                //i.iconfont.blue &#xe62b;
+                i.iconfont.icon-iconsy1.blue
+                span.s22.color5.blue 首页
+    span.warp_span
+        a.course(href="#")
+            span
+                i.iconfont.icon-eduiconkecheng
+                span.s22.color5 课程
+    span.warp_span
+        a.tao_can(href="#")
+            span
+                i.iconfont.icon-edufenleitaocan
+                span.s22.color5 套餐
+    span.warp_span
+        a.buy_car(href="#")
+            span
+                i.iconfont.icon-eduicongouwuche1
+
+                span.s22.color5 购物车
+    span.warp_span
+        a.my_edu(href="#")
+            span
+                i.iconfont.icon-eduiconmy
+                span.s22.color5 我的
+    - if( second_nav_jiezhang )
+        .footer_second.s22.color7
+            span.course_num 选择 1 件
+            span.course_menony_desc 合计：
+            span.yellow.course_menony_num ￥99.00
+            a(href="#").yellow_bg.s28.jiezhang_bt 结算
+            a(href="#").gray_bg.s28.del_bt 删除
+    - if( second_nav_buycar )
+        .footer_second.s22.color7
+            //span.course_num 选择 1 件
+            //span.course_menony_desc 合计：
+            //span.yellow.course_menony_num ￥99.00
+            //a(href="#").yellow_bg.s28.jiezhang_bt 结算
+            //a(href="#").gray_bg.s28.del_bt 删除
+            span.iconfont.icon-iconheart.shoucang_bt
+                span.s22.while.shoucang_bt_desc  收藏
+            span.course_menony_desc_buycar 合计：
+            span.yellow.course_menony_num_buycar ￥6666
+            a(href="#").s28.add_buy_car_bt 加入购物车
+            //span#ball 球
+            a(href="#").yellow_bg.s28.liji_buy_bt 立即购买

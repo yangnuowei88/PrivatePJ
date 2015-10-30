@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        meta( http-equiv="content-type" content="text/html; charset=utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="format-detection" content="telephone=no")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black")
+        meta(name="screen-orientation" content="portrait")
+        // uc强制竖屏
+        meta(name="x5-orientation" content="portrait")
+        // QQ强制竖屏
+        title CSDN
+        //<link rel="stylesheet" href="css/main.css">
+        //link( rel="stylesheet" href="static/css/font-awesome.min.css" )
+        link( rel="stylesheet" href="static/css/mod_common.css" )
+        link( rel="stylesheet" href="static/css/iconfont.css" )
+        link( rel="stylesheet" href="static/css/font-awesome.min.css" )
+        block css
+        script( src="static/js/libs/zepto.js" )
+        script( src="static/js/libs/hammer.min.js" )
+        script( src="static/js/page_size_init.js" )
+        script( src="static/js/nav.js" )
+        script( src="static/js/footer.js" )
+
+    body#body
+
+        block header
+        .main.clearfix
+            block introduction
+            block nav
+            block content
+        .pop_mark.edu_hidden
+
+        block footer
+        script(type="text/javascript").
+            initpage();
+            $(window).resize(function(){
+                        initpage();
+                    });
+        block script

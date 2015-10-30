@@ -1,0 +1,64 @@
+.index_pannel
+    .index_pannel_head
+        h3.s32.color3= title
+        a.s24.color7.more(href="#")
+            | 更多
+            span.more_warp
+                i.fa.fa-chevron-right.more_i
+    .index_pannel_content
+        - for( var j = 0; j < 3; j++ )
+            if(j!=1)
+                .single_line_content.clearfix
+                            //- for( var i = 0; i < 2; i++ )
+                            ul
+                                li.img_li
+                                    a(href="#")
+                                         img(src="http://img.bss.csdn.net/201505220633207888.jpg")
+                                    .s20.course_logo.course_logo_taocan 套&nbsp;餐
+                                li.s24.color3.desc
+                                    a(href="#")
+                                        | 第五版项目管理基础教础第五版项目管理基础教础
+                                li.price_li.s22
+                                    span.blue.s22 100
+                                    | 课时
+                                    span.price.s22 ￥2000
+                            ul
+                                li.img_li
+                                    a(href="#")
+                                        img(src="http://img.bss.csdn.net/201505220633207888.jpg")
+                                    .s20.course_logo.course_logo_dujia 独&nbsp;家
+                                li.s24.color3.desc
+                                    a(href="#")
+                                        | 第五版项目管理基础教础第五版项目管理基础教础
+                                li.price_li.s22
+                                    span.blue.s22 100
+                                    | 课时
+                                    span.price.s22 ￥2000
+            else
+                .single_line_content.clearfix
+                        ul
+                            li.img_li
+                                a(href="#")
+                                    img(src="http://img.bss.csdn.net/201505220633207888.jpg")
+                                .s20.course_logo.course_logo_shoufa 首&nbsp;发
+                            li.s24.color3.desc
+                                a(href="#")
+                                    | 第五版项目管理基础教础第五版项目管理基础教础
+                            li.price_li.s22
+                                span.blue.s22 100
+                                | 课时
+                                span.price.s22 ￥2000
+                        ul
+                            li.img_li
+                                a(href="#")
+                                    img(src="http://img.bss.csdn.net/201505220633207888.jpg")
+                                .s20.course_logo.course_logo_dujia 独&nbsp;家
+                            li.s24.color3.desc
+                                a(href="#")
+                                    | 第五版项目管理基础教础第五版项目管理基础教础
+                            li.price_li.s22
+                                span.blue.s22 100
+                                | 课时
+                                span.price.s22 ￥2000
+
+

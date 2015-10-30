@@ -1,0 +1,143 @@
+extends ../layouts/layout.jade
+
+block css
+  link( rel="stylesheet", type="text/css", href="static/css/edu_mobile_course_detail.css" )
+block header
+    - var active = 0
+    include ../modules/mod_header.jade
+block introduction
+    //此处将放播放器
+    #video_warp
+        img(src="http://img.bss.csdn.net/201506151714571253.jpg")
+
+
+block nav
+block content
+    .content
+        .pannel_tab
+            .s28.color3.pannel_tab_head
+                span.active 目录
+                span 详情
+                span 讲师
+                span 优惠套餐
+                span 相关课程
+            .pannel_tab_content
+                .pannel_course_warp.clearfix
+                    //- for( var i = 0; i < 5; i++ )
+                    //课程目录
+                    .pannel_course.pannel_course_outline
+                        .pannel_course_head
+                            span.blue_bg.pannel_head_blue
+                            span.color3.s26 课程目录
+                        .pannel_course_content
+                            ul.color7.course_outline_ul
+                                - for( var j = 0; j < 10; j++ )
+                                        li.s24.course_outline_li
+                                            span.color3.s24.course_num=i
+                                            a.course_title(href="#") 如何制作传说中的树状分布图表？
+                                            span.s22.yellow.course_free 免费
+                                            span.s20.course_time  31:47
+                                            span.course_oprea
+
+                                        li.s24.course_outline_li
+                                            span.color3.s24.course_num 1
+                                            a.course_title(href="#") 如何制作传说中的树状分布图表？
+                                            span.s22.yellow.course_free 免费
+                                            span.s20.course_time  31:47
+                                            span.course_oprea
+                    //课程介绍
+                    .pannel_course.pannel_course_detail
+                        .pannel_course_head
+                            span.blue_bg.pannel_head_blue
+                            span.color3.s26 课程介绍
+                        .pannel_course_content
+                            ul.color7.s24.course_detail_ul
+                                li.course_detail_li
+                                    span.color3 【课程介绍】：
+                                    | （前两节课免费学习）是一套专业建立Excel数据与PPT图表呈现的重量级软件。是世界500强公司尤其是咨询公司顾问必备图表数据分析呈现软件工具。资深OfficeMMI讲师秦川（牛闪闪）
+                                    | 将带您学习和掌握款名叫Think-Cell Chart软件的使用，让您在Office工作中如虎添翼。本课程15集，对各种图表进行分课讲解。
+                                li.course_detail_li
+                                    span.color3 【课程目标】：
+                                    | 要用做标杆标准的专业数据分析图表的商务用户。
+                                li.course_detail_li
+                                    span.color3 【课程计划】：
+                                    | 本课程共16集，将会Think-cell Chart各种图表进行分课讲解。
+
+                        .pannel_course_head.pannel_course_head_second
+                            span.blue_bg.pannel_head_blue
+                            span.color3.s26 课程评论（2）
+                        .pannel_course_content
+                            ul.color7.s22.course_pingjia_ul
+                                - for( var j = 0; j < 10; j++ )
+                                    li.course_pingjia_li
+                                        .course_pingjia_li_desc 课程与目录相符，讲解很好！很满意！
+                                        .course_pingjia_li_info
+                                            span.pingjia_man 王老三
+                                            span.pingjia_fabiaoyu 发表于
+                                            span.pingjia_time 2015-05-06
+                    //讲师
+                    .pannel_course.pannel_course_teacher
+                        .pannel_course_head
+                            span.blue_bg.pannel_head_blue
+                            span.color3.s26 讲师介绍
+                        .pannel_course_content
+                            dl.teacher_list
+                                   dt.teacher_img
+                                       a(href="#")
+                                           img(src="http://img.bss.csdn.net/201502270151088383.jpg")
+                                   dd.s26.color3.teacher_name
+                                       a(herf="#") 欧阳健
+                                   dd.s22.color7.teacher_jigou
+                                    | 所属机构：
+                                    span.blue.bule_price 百度
+                                   dd.s22.color7.teacher_price
+                                       | 课程：
+                                       span.blue 26
+                                       span.bule_price 学员：
+                                       span.blue 5000
+                            .teacher_desc1.s24.color7
+                                | 尚硅谷高级讲师，东北师大理学学士，北航硕士，曾于北航软件开发环境国家重点实验室研究多项课题，对智能交通—浮动车海量数据挖掘及。
+
+                        .pannel_course_head.pannel_course_head_second
+                            span.blue_bg.pannel_head_blue
+                            span.color3.s26 讲师会员卡
+                        .pannel_course_content.pannel_teacher_card
+                            ul
+                                li.s22.color7 当前收费课程&nbsp;
+                                    span.blue 15
+                                    | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总金额&nbsp;
+                                    span.price.price_none_flot ￥5000
+                                li.s24.color3  会员卡类型：
+                                li.s24.color7
+                                    span.card_tag 半年
+                                    span.card_tag_active 一年
+
+                                    span.card_tag 两年
+                                    span.card_tag 终身
+                                    span.price.price_none_flot  ￥1000
+                                li.soon_buy.clearfix
+                                    a.s32.blue_bg.soon_buy_bt(href="#") 立即购买
+                            //ul.color7.s22.course_pingjia_ul
+                            //    - for( var j = 0; j < 10; j++ )
+                            //    li.course_pingjia_li
+                            //        .course_pingjia_li_desc 课程与目录相符，讲解很好！很满意！
+                            //        .course_pingjia_li_info
+                            //            span.pingjia_man 王老三
+                            //            span.pingjia_fabiaoyu 发表于
+                            //            span.pingjia_time 2015-05-06
+
+
+
+block footer
+    - var active = 0
+    include ../modules/mod_footer.jade
+block script
+
+    script( src="static/js/libs/hammer.min.js" )
+    //script.
+    //    jQuery = Zepto; // We just need this one line
+    //script( src="static/js/libs/jquery.hammer.js" )
+    script( src="static/js/tab.js" )
+
+
+

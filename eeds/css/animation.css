@@ -1,0 +1,917 @@
+/*从左渐入*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+从右渐入
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/*放大进入*/
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+/* 向下翻转展开 */
+@-webkit-keyframes rotateD {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateX(0deg);
+  }
+}
+@-moz-keyframes rotateD {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateX(0deg);
+  }
+}
+/*从右淡入*/
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}/*逐渐显示*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+/*放大缩小*/
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+/*从左渐入*/
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+/*从右渐入*/
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+
+
+/*左右抖动*/
+@-moz-keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/*渐现效果*/
+@-webkit-keyframes opa1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes opa1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes opa2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes opa2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes opa3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes opa3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 上方淡入效果 */
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-8rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-8rem);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+/* 下方淡入效果 */
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+/* 旋转放大淡出 */
+@-webkit-keyframes rotateBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(360deg) scale(1);
+  }
+}
+@-moz-keyframes rotateBig {
+  0% {
+    opacity: 0;
+    -zom-transform: rotate(0deg) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: rotate(360deg) scale(1);
+  }
+}
+/* 延伸展开 */
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scale {
+  0% {
+    opacity: 0;
+    -zom-transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: scale(1);
+  }
+}
+/* 左翻转展开 */
+@-webkit-keyframes rotateL {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateY(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+}
+@-moz-keyframes rotateL {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateY(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+}
+/* 右翻转展开 */
+@-webkit-keyframes rotateR {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+}
+@-moz-keyframes rotateR {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+}
+/* 向下翻转展开 */
+@-webkit-keyframes rotateD {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateX(0deg);
+  }
+}
+@-moz-keyframes rotateD {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateX(0deg);
+  }
+}
+/* 缩放 */
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scale {
+  0% {
+    opacity: 0;
+    -zom-transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -zom-transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    -zom-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: scale(1);
+  }
+}
+/* 左淡入 */
+@-webkit-keyframes swing1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing1 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 右淡入 */
+@-webkit-keyframes swing2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing2 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 左进入 */
+@-webkit-keyframes swing3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing3 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 右进入 */
+@-webkit-keyframes swing4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing4 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity:1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 下方进入效果 */
+@-webkit-keyframes fadeInUp1 {
+  0% {
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp1 {
+  0% {
+    -moz-transform: translateY(1rem);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+/* 无限循环旋转 */
+@-webkit-keyframes rotate360 {
+  0% {
+    -webkit-transform: perspective(700px) rotateY(0deg);
+  }
+  50%{
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(0) rotateY(360deg);
+  }
+}
+@-moz-keyframes rotate360 {
+  0% {
+    -zom-transform: perspective(700px) rotateY(0deg);
+  }
+  50%{
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+  100% {
+    -zom-transform: perspective(0) rotateY(360deg);
+  }
+}
+
+/*第一屏动画执行 开始*/
+.animate .sec01-1{
+  animation: zoomIn 1s 0.2s ease both;
+  -webkit-animation: zoomIn 1s 0.2s ease both;
+  -zom-animation: zoomIn 1s 0.2s ease both;
+}
+.animate .sec01-2{
+  animation: swing3 1s 0.4s ease both;
+  -webkit-animation: swing3 1s 0.4s ease both;
+  -zom-animation: swing3 1s 0.4s ease both;
+}
+/*第一屏动画执行 结束*/
+
+/*第二屏动画执行 开始*/
+.animate .sec02-1{
+  -webkit-animation: slideInLeft 2s  ease-in-out both;
+  -moz-animation: slideInLeft 2s  ease-in-out both;
+}
+.animate .sec02-2{
+  -webkit-animation: fadeIn 1s 1s ease-in-out both;
+  -moz-animation: fadeIn 1s 1s ease-in-out both;
+}
+.animate .sec02-3{
+  -webkit-animation: fadeIn 1s 1.5s ease-in-out both;
+  -moz-animation: fadeIn 1s 1.5s ease-in-out both;
+}
+.animate .sec02-4{
+  -webkit-animation: swing3  1s 2s ease-in-out both;
+  -moz-animation: swing3  1s 2s ease-in-out both;
+}
+.animate .sec02-5{
+  -webkit-animation: swing3  1s 2.5s ease-in-out both;
+  -moz-animation: swing3  1s 2.5s ease-in-out both;
+}
+.animate .sec02-6{
+  -webkit-animation: swing3 1s 3s ease-in-out both;
+  -moz-animation: swing3 1s 3s ease-in-out both;
+}
+.animate .sec02-7{
+  -webkit-animation: swing3 1s 3.5s ease-in-out both;
+  -moz-animation: swing3 1s 3.5s ease-in-out both;
+}
+/*第二屏动画执行 结束*/
+
+/*第三屏动画执行 开始*/
+.animate .sec03-1{
+  -webkit-animation: zoomIn 2s  ease-in-out both;
+  -moz-animation: zoomIn 2s  ease-in-out both;
+}
+.animate .sec03-2{
+  -webkit-animation:fadeIn 1s 2s ease-in-out both;
+  -moz-animation:fadeIn 1s 2s ease-in-out both;
+}
+.animate .sec03-3{
+  -webkit-animation: fadeInLeft 1s 2s ease-in-out both;
+  -moz-animation: fadeInLeft 1s 2s ease-in-out both;
+}
+.animate .sec03-4{
+  -webkit-animation: fadeInRight 1s 2s ease-in-out both;
+  -moz-animation: fadeInRight 1s 2s ease-in-out both;
+}
+.animate .sec03-5{
+  -webkit-animation: swing3 1s 3s ease-in-out both;
+  -moz-animation: swing3 1s 3s ease-in-out both;
+}
+.animate .sec03-6{
+  -webkit-animation: swing3 1s 3.5s ease-in-out both;
+  -moz-animation: swing3 1s 3.5s ease-in-out both;
+}
+.animate .sec03-7{
+  -webkit-animation: swing3 1s 4s ease-in-out both;
+  -moz-animation: swing3 1s 4s ease-in-out both;
+}
+/*第三屏动画执行 结束*/
+
+/*第四屏动画执行 开始*/
+.animate .sec04-1{
+  -webkit-animation: zoomIn 2s  ease-in-out both;
+  -moz-animation: zoomIn 2s  ease-in-out both;
+}
+.animate .sec04-2{
+  -webkit-animation:fadeIn 1s 2s ease-in-out both;
+  -moz-animation:fadeIn 1s 2s ease-in-out both;
+}
+.animate .sec04-3{
+  -webkit-animation: fadeInLeft 1s 2s ease-in-out both;
+  -moz-animation: fadeInLeft 1s 2s ease-in-out both;
+}
+.animate .sec04-4{
+  -webkit-animation: fadeInRight 1s 2s ease-in-out both;
+  -moz-animation: fadeInRight 1s 2s ease-in-out both;
+}
+.animate .sec04-5{
+  -webkit-animation: swing3 1s 3s ease-in-out both;
+  -moz-animation: swing3 1s 3s ease-in-out both;
+}
+.animate .sec04-6{
+  -webkit-animation: swing3 1s 3.5s ease-in-out both;
+  -moz-animation: swing3 1s 3.5s ease-in-out both;
+}
+.animate .sec04-7{
+  -webkit-animation: swing3 1s 4s ease-in-out both;
+  -moz-animation: swing3 1s 4s ease-in-out both;
+}
+/*第四屏动画执行 结束*/
+
+/*第五屏动画执行 开始*/
+.animate .sec05-1{
+  -webkit-animation: slideInRight 1s  ease-in-out both;
+  -moz-animation: slideInRight 1s  ease-in-out both;
+}
+.animate .sec05-2{
+  -webkit-animation:fadeIn 1s 1.5s ease-in-out both;
+  -moz-animation:fadeIn 1s 1.5s ease-in-out both;
+}
+.animate .sec05-3{
+  -webkit-animation: fadeInLeft 1s 1.5s ease-in-out both;
+  -moz-animation: fadeInLeft 1s 1.5s ease-in-out both;
+}
+.animate .sec05-4{
+  -webkit-animation: fadeInRight 1s 1.5s ease-in-out both;
+  -moz-animation: fadeInRight 1s 1.5s ease-in-out both;
+}
+.animate .sec05-5{
+  -webkit-animation: swing3 1s 2.5s ease-in-out both;
+  -moz-animation: swing3 1s 2.5s ease-in-out both;
+}
+.animate .sec05-6{
+  -webkit-animation: swing3 1s 3s ease-in-out both;
+  -moz-animation: swing3 1s 3s ease-in-out both;
+}
+.animate .sec05-7{
+  -webkit-animation: swing3 1s 3.5s ease-in-out both;
+  -moz-animation: swing3 1s 3.5s ease-in-out both;
+}
+/*第五屏动画执行 结束*/
+
+/*第六屏动画执行 开始*/
+.animate .sec06-1{
+  animation: fadeInDown 1s 0.5s ease both;
+  -webkit-animation: fadeInDown 1s 0.5s ease both;
+  -zom-animation: fadeInDown 1s 0.5s ease both;
+}
+.animate .sec06-2{
+  animation: fadeInDown 1s  1s ease both;
+  -webkit-animation: fadeInDown 1s 1s ease both;
+  -zom-animation: fadeInDown 1s 1s ease both;
+}
+.animate .sec06-3{
+  animation: fadeInDown 1s  1.8s ease both;
+  -webkit-animation: fadeInDown 1s 1.8s ease both;
+  -zom-animation: fadeInDown 1s 1.8s ease both;
+}
+.animate .sec06-4{
+  animation: fadeInDown 1s  2.5s ease both;
+  -webkit-animation: fadeInDown 1s 2.5s ease both;
+  -zom-animation: fadeInDown 1s 2.5s ease both;
+}
+.animate .sec06-5{
+  -webkit-animation: swing3 0.8s 3s ease-in-out both;
+  -moz-animation: swing3 0.5s 3s ease-in-out both;
+}
+.animate .sec06-6{
+  -webkit-animation: swing3 0.8s 3.5s ease-in-out both;
+  -moz-animation: swing3 0.8s 3.5s ease-in-out both;
+}
+/*第六屏动画执行 结束*/
+
+/*第七屏动画执行 开始*/
+.animate .sec07-1,.animate .sec07-2,.animate .sec07-3,.animate .sec07-4,.animate .sec07-5{
+  -webkit-animation: rotateD 1s  ease-in-out both;
+  -moz-animation: rotateD 1s  ease-in-out both;
+}
+.animate .sec07-6,.animate .sec07-7,.animate .sec07-8,.animate .sec07-9{
+  -webkit-animation: rotateD 1s  0.5s ease-in-out both;
+  -moz-animation: rotateD 1s  0.5s ease-in-out both;
+}
+.animate .sec07-10,.animate .sec07-11,.animate .sec07-12,.animate .sec07-13,.animate .sec07-14{
+  -webkit-animation: rotateD 1s 1s ease-in-out both;
+  -moz-animation: rotateD 1s  1s ease-in-out both;
+}
+.animate .sec07-15,.animate .sec07-16,.animate .sec07-17,.animate .sec07-18{
+  -webkit-animation: rotateD 1s  1.5s ease-in-out both;
+  -moz-animation: rotateD 1s  1.5s ease-in-out both;
+}
+.animate .sec07-19,.animate .sec07-20,.animate .sec07-21{
+  -webkit-animation: rotateD 0.7s  1.8s ease-in-out both;
+  -moz-animation: rotateD 0.7s  1.8s ease-in-out both;
+}
+.animate .sec07-22,.animate .sec07-23,.animate .sec07-24,.animate .sec07-25,.animate .sec07-26{
+  -webkit-animation: rotateD 1s 2.1s ease-in-out both;
+  -moz-animation: rotateD 1s  2.1s ease-in-out both;
+
+
+
+
+
+}
+
+/*图片查看的css start*/
+.scaleTu2{
+ transform: scale(2);
+ -webkit-transform: scale(2);
+}
+
+
+
+
+/*图片查看的css end*/
+/*第七屏动画执行 结束*/

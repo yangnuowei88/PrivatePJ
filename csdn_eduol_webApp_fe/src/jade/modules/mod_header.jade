@@ -1,0 +1,141 @@
+header#header.clearfix
+    a.logo(href="#")
+        img(src="static/images/csdn_edu_logo.svg")
+    a.pop_header_bt(href="#")
+        i.iconfont.icon-edulist
+    a.pop_search_bt(href="#")
+        i.iconfont.icon-eduzoom
+    .color9.header_search_pop.edu_hidden
+        .course_search_input
+            form.course_search_form(action="http://edu.csdn.net/course")
+                .search_warp
+                    div.search_warp_border
+                        i.iconfont.icon-eduzoom.edu_search
+                        input.course_input(type="search" placeholder="输入课程名称搜索" name="keywords" id="keywords" value="" autocomplete="off")
+                    input.course_submit(type="submit"  value="搜索")
+        .s26.recommond_tag
+            .recommond_tag_title 热门搜索
+            .recommond_tag_content
+                - for( var j = 0; j < 5; j++ )
+                    span.s24.search_tag 关键字
+        .s26.history_seacrh
+            .recommond_tag_title 搜索历史
+            .recommond_tag_content
+                    - for( var j = 0; j < 5; j++ )
+                    span.search_tag php
+    .s24.header_second_nav_pop.edu_hidden
+            //- for( var j = 0; j < 15; j++ )
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiquanbu
+                .fenlei_desc 全&nbsp;部
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiyidongkaifa
+                .fenlei_desc 移动开发
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiyunjisuan
+                .fenlei_desc 云计算
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiyouxikaifa
+                .fenlei_desc 游戏开发
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiruanjianyanfa
+                .fenlei_desc 软件研发
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleixitongwangluo
+                .fenlei_desc 系统/网络
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleishujuku
+                .fenlei_desc 数据库
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleibiancheng
+                .fenlei_desc 编程语言
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiweb
+                .fenlei_desc Web开发
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleibangongsheji
+                .fenlei_desc 办公/设计
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiyingjian
+                .fenlei_desc 硬件/嵌入式
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleidaxue
+                .fenlei_desc 大学课程
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleirenzheng
+                .fenlei_desc 认证考试
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleiit
+                .fenlei_desc 企业IT
+            a.fenlei_warp(href="#")
+                .fenlei_bg
+                    i.iconfont.icon-edufenleitaocan
+                .fenlei_desc 套&nbsp;餐
+        //i.iconfont &#xe605;
+    //span.course_search
+    //    form.course_search_form(action="http://edu.csdn.net/course")
+    //        input.course_input(type="search" placeholder="输入关键词搜索课程" name="keywords" id="keywords" value="" autocomplete="off")
+    //        input.course_submit(type="submit"  value="")
+    //        .search_tip
+    //            .search_tip_list
+    //                | 搜索
+    //                span.key_word_desc 关键字
+    //                | 的课程
+    //            .search_tip_list
+    //                | 搜索
+    //                span.key_word_desc 关键字
+    //                | 的套餐
+    //            .search_tip_list
+    //                | 搜索
+    //                span.key_word_desc 关键字
+    //                | 的讲师
+    //    script(type="text/javascript").
+    //        $(".course_input").keyup(function () {
+    //            if (this.value.length > 0) {
+    //                if (this.value.length > 10) {
+    //                    var temp_value = this.value.slice(0, 10) + "...";
+    //                }
+    //                else {
+    //                    temp_value = this.value;
+    //                }
+    //                $(this).siblings(".search_tip").find(".key_word_desc").html(temp_value)
+    //                $(this).siblings(".search_tip").css("display", "block")
+    //                $(this).next("input").css("display", "none")
+    //            }
+    //            else {
+    //                $(this).siblings(".search_tip").css("display", "none")
+    //            }
+    //        });
+    //        var action_url = ["www.baidu.com", "www.sie.com", "www.tt.com"]
+    //        $(".search_tip_list").click(function () {
+    //            var index = $(".search_tip_list ").index($(this));
+    //            $(".course_search_form").attr("action", action_url[index]);
+    //            $(".search_tip").css("display", "none");
+    //            $(".course_search_form").submit();
+    //            return false;
+    //        })
+    //        $(".course_input").blur(function () {
+    //            var $that = $(this);
+    //            var outTimer = setTimeout(function () {
+    //                $that.siblings(".search_tip").css("display", "none")
+    //            }, 200);
+    //            $that.next("input").css("display", "inline");
+    //        });
+    //
+    //
+
+    span.header_nav_btn

@@ -1,0 +1,30 @@
+.index_pannel( class="#{cls}" )
+    .index_pannel_head
+        h3.s32.color3= title
+        a.s24.color7.more(href="#")
+            | 更多
+            span.more_warp
+                i.fa.fa-chevron-right.more_i
+    .index_pannel_content
+            .single_line_content.clearfix
+                    - for( var i = 0; i < 4; i++ )
+                            dl.teacher_list
+                                dt.teacher_img
+                                    a(href="#")
+                                        img(src="http://img.bss.csdn.net/201502270151088383.jpg")
+                                dd.s26.color3.teacher_name
+                                    a(herf="#") 欧阳健
+                                dd.s22.color7.teacher_desc 多年MVP专注于Microsoft/VMWare/Citr技术
+                                dd.s22.color7.teacher_price
+                                    span.blue 26
+                                    | 课程
+                                    span.blue.bule_price 5000
+                                    | 学员
+
+
+
+
+
+
+
+

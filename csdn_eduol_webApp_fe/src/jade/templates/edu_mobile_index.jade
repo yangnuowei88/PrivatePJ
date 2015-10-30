@@ -1,0 +1,54 @@
+extends ../layouts/layout.jade
+
+block css
+  link( rel="stylesheet", type="text/css", href="static/css/edu_mobile_index.css" )
+block header
+    - var active = 0
+    include ../modules/mod_header.jade
+block introduction
+    .banner
+        section#tabPic
+            ul#picList
+                li
+                    img(src="http://img.bss.csdn.net/201506151710372177.jpg")
+                li
+                    img(src="http://img.bss.csdn.net/201506151714571253.jpg")
+                li
+                    img(src="http://img.bss.csdn.net/201506151714339357.jpg")
+                li
+                    img(src="http://img.bss.csdn.net/201506151713479415.jpg")
+            section.picMask.clearfix
+                nav
+                    a.active(href="javascript:;")
+                    a(href="javascript:;")
+                    a(href="javascript:;")
+                    a(href="javascript:;")
+
+block nav
+block content
+    .content
+        - var title = '热门课程'
+        - var cls = 'mod_hot_course';
+        include ../modules/mod_index_pannel_course.jade
+
+        - var title = '最新课程'
+        - var cls = 'mod_newest_course';
+        include ../modules/mod_index_pannel_course.jade
+        - var title = '热卖套餐'
+        - var cls = 'mod_hot_taocan';
+        include ../modules/mod_index_pannel_course.jade
+        - var title = '金牌讲师'
+        - var cls = 'mod_hot_teacher';
+        include ../modules/mod_index_pannel_teacher.jade
+
+block footer
+    //目前没用
+    - var active = 0
+    - var second_nav_jiezhang = false
+    - var second_nav_buycar = true
+    include ../modules/mod_footer.jade
+block script
+    script( src="static/js/banner.js" )
+
+
+

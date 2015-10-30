@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="loadingNum">0%</div>
+<script>
+    var l=0;
+    var imgs;
+    var sum=0;
+    var imgs=new Array();
+    var imgUrlBase="";
+    var imgUrlArray= ['http://r2.ykimg.com/05100000556D51190A481554E7007510','http://r1.ykimg.com/0510000055700BB40A481502B00D74F3'];
+    function chk(){
+        l--;
+        document.getElementById("loadingNum").innerText=""+((sum-l)*100/sum)+"%"
+        if (l==0){
+            for (var i=0;i<sum;i++)
+                document.body.innerHTML+="<img src='"+imgs[i].src+"'>"
+        }
+    }
+    for(var j=0;j<imgUrlArray.length;j++){
+        imgs[j]=new Image();
+        imgs[j].src=imgUrlArray[j]
+    }
+    sum=l=imgs.length;
+    for (var i=0;i<l;i++){
+        imgs[i].onload=chk;
+        imgs[i].onerror=chk;//无论图片是否加载成功，都执行指定方法
+    }
+</script>
+</body>
+</html>

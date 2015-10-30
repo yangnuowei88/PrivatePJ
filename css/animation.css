@@ -1,0 +1,1074 @@
+/*左右抖动*/
+@-moz-keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes Shake {
+  0%, 50% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/*渐现效果*/
+@-webkit-keyframes opa1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes opa1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes opa2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes opa2 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes opa3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes opa3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* 上方淡入效果 */
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-8rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-8rem);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+/* 下方淡入效果 */
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+/* 旋转放大淡出 */
+@-webkit-keyframes rotateBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(360deg) scale(1);
+  }
+}
+@-moz-keyframes rotateBig {
+  0% {
+    opacity: 0;
+    -zom-transform: rotate(0deg) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: rotate(360deg) scale(1);
+  }
+}
+/* 延伸展开 */
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scale {
+  0% {
+    opacity: 0;
+    -zom-transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: scale(1);
+  }
+}
+/* 左翻转展开 */
+@-webkit-keyframes rotateL {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateY(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+}
+@-moz-keyframes rotateL {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateY(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+}
+/* 右翻转展开 */
+@-webkit-keyframes rotateR {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+}
+@-moz-keyframes rotateR {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+}
+/* 向下翻转展开 */
+@-webkit-keyframes rotateD {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateX(0deg);
+  }
+}
+@-moz-keyframes rotateD {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateX(0deg);
+  }
+}
+
+/* 向右翻转展开 */
+@-webkit-keyframes rotateD2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+}
+@-moz-keyframes rotateD2 {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px) rotateY(90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+}
+
+/* 向右翻转展开 */
+@-webkit-keyframes rotateD22 {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(700px) rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: perspective(0) rotateX(0deg);
+  }
+}
+@-moz-keyframes rotateD22 {
+  0% {
+    opacity: 0;
+    -zom-transform: perspective(700px)  rotateX(90deg);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: perspective(0) rotateX(0deg);
+  }
+}
+
+
+
+/* 缩放 */
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scale {
+  0% {
+    opacity: 0;
+    -zom-transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -zom-transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+    -zom-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: scale(1);
+  }
+}
+
+
+@-webkit-keyframes scale22 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: scale(0.2);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(0.4);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(0.6);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes scale22 {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.1);
+  }
+  20% {
+    opacity: 1;
+    -mozt-transform: scale(0.2);
+  }
+  40% {
+    opacity: 1;
+    -moz-transform: scale(0.4);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: scale(0.6);
+  }
+  80% {
+    opacity: 1;
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+
+
+
+@-webkit-keyframes scale33 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+  20% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.9);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+  }
+  60% {
+    opacity: 0.3;
+    -webkit-transform: scale(0.9);
+  }
+  80% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+  }
+}
+@-moz-keyframes scale33 {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+  20% {
+    opacity: 0.5;
+    -mozt-transform: scale(0.9);
+  }
+  40% {
+    opacity: 1;
+    -moz-transform: scale(1.1);
+  }
+  60% {
+    opacity: 0.8;
+    -moz-transform: scale(0.9);
+  }
+  80% {
+    opacity: 0.6;
+    -moz-transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(0.9);
+  }
+}
+
+
+
+
+
+
+
+
+/* 左淡入 */
+@-webkit-keyframes swing1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing1 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 右淡入 */
+@-webkit-keyframes swing2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing2 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 左进入 */
+@-webkit-keyframes swing3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing3 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(-0.5rem);
+  }
+  100% {
+    opacity: 1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 右进入 */
+@-webkit-keyframes swing4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes swing4 {
+  0% {
+    opacity: 0;
+    -zom-transform: translateX(0.5rem);
+  }
+  100% {
+    opacity:1;
+    -zom-transform: translateX(0);
+  }
+}
+/* 下方进入效果 */
+@-webkit-keyframes fadeInUp1 {
+  0% {
+    -webkit-transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes fadeInUp1 {
+  0% {
+    -moz-transform: translateY(1rem);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+/* 无限循环旋转 */
+@-webkit-keyframes rotate360 {
+  0% {
+    -webkit-transform: perspective(700px) rotateY(0deg);
+  }
+  50%{
+    -webkit-transform: perspective(0) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(0) rotateY(360deg);
+  }
+}
+@-moz-keyframes rotate360 {
+  0% {
+    -zom-transform: perspective(700px) rotateY(0deg);
+  }
+  50%{
+    -zom-transform: perspective(0) rotateY(0deg);
+  }
+  100% {
+    -zom-transform: perspective(0) rotateY(360deg);
+  }
+}
+
+
+/* 宽度++ */
+@-webkit-keyframes widthAdd {
+  0%,40% {
+    width: 0;
+    opacity: 0.5;
+  }
+  70%,100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes widthAdd {
+  0%,40% {
+    width: 0;
+    opacity: 0.5;
+  }
+  70%,10% {
+    width: 100%;
+  }
+}
+
+
+
+/*第一屏动画执行 开始*/
+.animate .sec01-1{
+ /* animation: fadeInRight 1s 0.2s ease both , fadeOutLeft 1s 2.2s ease both;
+  -webkit-animation:  fadeOutLeft 1s 3s ease both,fadeInRight 1s 0.2s ease both infinite;
+  -zom-animation: fadeInRight 1s 0.2s ease both, fadeOutLeft 1s 2.2s ease both;*/
+
+   -webkit-animation:  fadeInAndOut 4s 0s ease both infinite;
+
+
+}
+
+
+@-webkit-keyframes fadeInAndOut {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+25%,50%,75%{opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+.animate .sec01-2{
+  animation: tada4time 4s  ease backwards infinite;
+  -webkit-animation: tada4time 4s  ease backwards infinite;
+  -zom-animation: tada4time 4s  ease backwards infinite;
+
+}
+
+@-webkit-keyframes tada4time {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50%,60%,65%,70%,75% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  53%,64%,65%,73% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
+.animate .sec01-3{
+  animation: fadeInUp 1s 0.6s ease both;
+  -webkit-animation: fadeInUp 1s 0.6s ease both;
+  -zom-animation: fadeInUp 1s 0.6s ease both;
+}
+
+/*第一屏动画执行 结束*/
+
+/*第二屏动画执行 开始*/
+.animate .sec02-1{
+  -webkit-animation: opa3 1.5s 0.5s ease-in-out both;
+  -moz-animation: opa3 1.5s 0.5s ease-in-out both;
+}
+.animate .sec02-2{
+  -webkit-animation: opa3 1.5s 0.8s ease-in-out both;
+  -moz-animation: opa3 1.5s 0.8s ease-in-out both;
+}
+
+.animate .sec02-4{
+  -webkit-animation: fadeInRight  0.5s 1.2s ease-in-out both ;
+  -moz-animation: fadeInRight  0.5s 1.2s ease-in-out both ;
+}
+.animate .sec02-3{
+  -webkit-animation: fadeInLeft 0.5s 1s ease-in-out both ;
+  -moz-animation: fadeInLeft 0.5s 1s ease-in-out both ;
+}
+
+
+/*第二屏动画执行 结束*/
+
+/*第三屏动画执行 开始*/
+.animate .sec03-1{
+  -webkit-animation: fadeInDown 1s 0.2s ease-in-out both;
+  -moz-animation: fadeInDown 1s 0.2s ease-in-out both;
+}
+
+
+.animate .sec03-2{
+  -webkit-animation:zoomIn 0.8s 1.5s ease-in-out both;
+  -moz-animation:zoomIn 0.8s 1.5s ease-in-out both;
+}
+
+.animate .sec03-3{
+  -webkit-animation: zoomIn 0.8s 1.8s ease-in-out both;
+  -moz-animation: zoomIn 0.8s 1.8s ease-in-out both;
+}
+
+.animate .sec03-4{
+  -webkit-animation: scale22 1.5s 0.2s steps(8,end) both;
+  -moz-animation: scale22 1.5s 0.2s steps(8,end) both;
+
+}
+
+/*第三屏动画执行 结束*/
+
+/*第四屏动画执行 开始*/
+.animate .sec04-1{
+  animation: fadeInUp 2s ease both;
+  -webkit-animation: fadeInUp 2s   ease both;
+  -zom-animation: fadeInUp 2s  ease both;
+}
+.animate .sec04-2{
+  animation: fadeInUp 1.5s 0.5s ease both;
+  -webkit-animation: fadeInUp 1.5s  0.5s ease both;
+  -zom-animation: fadeInUp 1.5s 0.5s ease both;
+}
+.animate .sec04-3{
+  animation: flipInX 2s 2s ease both;
+  -webkit-animation: flipInX 2s 2s ease both;
+  -zom-animation: flipInX 2s 2s ease both;
+}
+
+.animate .sec04-4{
+  animation: bounceIn 1s 1s ease both;
+  -webkit-animation: bounceIn 1s 1s ease both;
+  -zom-animation: bounceIn 1s 1s ease both;
+}
+/*第四屏动画执行 结束*/
+
+/*第五屏动画执行 开始*/
+.animate .sec05-1{
+  animation: opa3 1.5s 1s ease both;
+  -webkit-animation: opa3 1.5s 1s ease both;
+  -zom-animation: opa3 0.5s 1s ease both;
+}
+.animate .sec05-2{
+  animation: fadeInUp 1.5s 1s ease both;
+  -webkit-animation: fadeInUp 1.5s  1s ease both;
+  -zom-animation: fadeInUp 1.5s 1s ease both;
+}
+.animate .sec05-3{
+  animation: fadeInRight 1s 3s ease both;
+  -webkit-animation: fadeInRight 1s  3s ease both;
+  -zom-animation: fadeInRight 1s 1s ease both;
+}
+.animate .sec05-4{
+  animation: hand 2s 3s ease both;
+  -webkit-animation: hand 2s  3s ease both;
+  -zom-animation: hand 2s 3s ease both;
+}
+
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  50%,75%{
+    -webkit-transform: none;
+    transform: none;
+  }
+  100%{
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.animate .sec05-5{
+  animation: fadeInUp 1s 5s ease both;
+  -webkit-animation: fadeInUp 1s  5s ease both;
+  -zom-animation: fadeInUp 1s 5s ease both;
+}
+.animate .sec05-6{
+  animation: fadeInUp 1s 5.3s ease both;
+  -webkit-animation: fadeInUp 1s  5.3s ease both;
+  -zom-animation: fadeInUp 1s 5.3s ease both;
+}
+
+/*第五屏动画执行 结束*/
+
+/*第六屏动画执行 开始*/
+.animate .sec06_tit{
+  animation: fadeInDown 2s ease both;
+  -webkit-animation: fadeInDown 2s ease both;
+  -zom-animation: fadeInDown 2s ease both;
+}
+.animate .sec06-1{
+  animation: fadeInRight 1.5s ease both;
+  -webkit-animation: fadeInRight 1.5s ease both;
+  -zom-animation: fadeInRight 1.5s ease both;
+}
+.animate .sec06-2{
+  animation: fadeInLeft 1.5s  0.3s ease both;
+  -webkit-animation: fadeInLeft 1.5s 0.3s ease both;
+  -zom-animation: fadeInLeft 1.5s 0.3s ease both;
+}
+.animate .sec06-3{
+  animation: fadeInRight 1.5s  0.6s ease both;
+  -webkit-animation: fadeInRight 1.5s 0.6s ease both;
+  -zom-animation: fadeInRight 1.5s 0.6s ease both;
+}
+
+.animate .sec06-4{
+  animation: wobble2 1.5s  1.6s ease both;
+  -webkit-animation: wobble2 1.5s 1.6s ease both;
+  -zom-animation: wobble2 1.5s 1.6s ease both;
+}
+
+@-webkit-keyframes wobble2 {
+  from {
+    -webkit-transform: translate3d(0, 500%, 0) ;
+    transform: translate3d(0, 500%, 0);
+  }
+
+  40% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+
+  45% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  50% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  65% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  70% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  85% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes wobble2 {
+  from {
+    -webkit-transform: translate3d(0, 500%, 0) ;
+    transform: translate3d(0, 500%, 0);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+
+
+  45% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  50% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  65% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  70% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  85% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*第六屏动画执行 结束*/
+
+/*第七屏动画执行 开始*/
+.animate .sec07-1{
+  animation: 2s fadeInDown ease-in-out both;
+  -webkit-animation: 2s fadeInDown ease-in-out both;
+  -zom-animation: 2s fadeInDown ease-in-out both}
+.animate .sec07-2,.animate .sec07-3,.animate .sec07-4,.animate .sec07-5{
+  animation: 2s fadeInRight 1s ease-in-out both;
+  -webkit-animation: 2s fadeInRight 1s ease-in-out both;
+  -zom-animation: 2s fadeInRight 1s ease-in-out both}
+
+.animate .sec07-3{
+  animation: 2s fadeInRight 1.3s ease-in-out both;
+  -webkit-animation: 2s fadeInRight 1.3s ease-in-out both;
+  -zom-animation: 2s fadeInRight 1.3s ease-in-out both}
+
+.animate .sec07-4{
+  animation: 2s fadeInRight 1.6s ease-in-out both;
+  -webkit-animation: 2s fadeInRight 1.6s ease-in-out both;
+  -zom-animation: 2s fadeInRight 1.6s ease-in-out both}
+
+.animate .sec07-5{
+  animation: 2s fadeInRight 1.9s ease-in-out both;
+  -webkit-animation: 2s fadeInRight 1.9s ease-in-out both;
+  -zom-animation: 2s fadeInRight 1.9s ease-in-out both}
+.animate .sec07-7{
+  animation: 4s scale33 1.9s ease-in-out both ;
+  -webkit-animation: 4s scale33 1.9s ease-in-out both ;
+  -zom-animation: 4s scale33 1.9s ease-in-out both }
+
+.animate .sec07-8{
+  animation: 2s lightSpeedIn ease-in-out both;
+  -webkit-animation: 2s lightSpeedIn ease-in-out both;
+  -zom-animation: 2s lightSpeedIn ease-in-out both}
+
+
+
+/*第七屏动画执行 结束*/
+
+/*第8屏动画执行 开始*/
+.animate .sec08-1{
+  animation: 2s scale 0.5s ease-in-out both;
+  -webkit-animation: 2s scale 0.5s ease-in-out both;
+  -zom-animation: 2s scale 0.5s ease-in-out both}
+.animate .sec08-2{
+  animation: 1s fadeInRight  ease-in-out both;
+  -webkit-animation: 1s fadeInRight  ease-in-out both;
+  -zom-animation: 1s fadeInRight  ease-in-out both}
+.animate .sec08-3{
+  animation: 1s rotateD2 1s ease-in-out both;
+  -webkit-animation: 1s rotateD2 1s ease-in-out both;
+  -zom-animation: 1s rotateD2 1s ease-in-out both}
+
+.animate .sec08-4{
+  animation: 2s fadeInUp 1.6s ease-in-out both;
+  -webkit-animation: 2s fadeInUp 1.6s ease-in-out both;
+  -zom-animation: 2s fadeInUp 1.6s ease-in-out both}
+
+/*第8屏动画执行 结束*/
+
+
+/*第9屏动画执行 开始*/
+.animate .sec09-1{
+  animation: 2s scale 0.5s ease-in-out both;
+  -webkit-animation: 2s scale 0.5s ease-in-out both;
+  -zom-animation: 2s scale 0.5s ease-in-out both}
+.animate .sec09-2{
+  animation: 1s slideInDown  ease-in-out both;
+  -webkit-animation: 1s slideInDown  ease-in-out both;
+  -zom-animation: 1s slideInDown  ease-in-out both}
+.animate .sec09-3{
+  animation: 1s zoomIn 1s ease-in-out both;
+  -webkit-animation: 1s zoomIn 1s ease-in-out both;
+  -zom-animation: 1s zoomIn 1s ease-in-out both}
+
+.animate .sec09-4{
+  animation: 2s fadeInUp 1.6s ease-in-out both;
+  -webkit-animation: 2s fadeInUp 1.6s ease-in-out both;
+  -zom-animation: 2s fadeInUp 1.6s ease-in-out both}
+
+/*第9屏动画执行 结束*/
+
+
+
+/*第10屏动画执行 开始*/
+.animate .sec10-1{
+  animation: 2s scale 0.5s ease-in-out both;
+  -webkit-animation: 2s scale 0.5s ease-in-out both;
+  -zom-animation: 2s scale 0.5s ease-in-out both}
+.animate .sec10-2{
+  animation: 1s slideInDown  ease-in-out both;
+  -webkit-animation: 1s slideInDown  ease-in-out both;
+  -zom-animation: 1s slideInDown  ease-in-out both}
+.animate .sec10-3{
+  animation: 1s rotateD22 1s ease-in-out both;
+  -webkit-animation: 1s rotateD22 1s ease-in-out both;
+  -zom-animation: 1s rotateD22 1s ease-in-out both}
+
+.animate .sec10-4{
+  animation: 2s fadeInUp 1.6s ease-in-out both;
+  -webkit-animation: 2s fadeInUp 1.6s ease-in-out both;
+  -zom-animation: 2s fadeInUp 1.6s ease-in-out both}
+
+/*第10屏动画执行 结束*/
+
+
+/*第11屏动画执行 开始*/
+.animate .sec11-1{
+  animation: 2s scale 1.5s ease-in-out both;
+  -webkit-animation: 2s scale 1.5s ease-in-out both;
+  -zom-animation: 2s scale 1.5s ease-in-out both}
+.animate .sec11-2{
+  animation: 1s fadeInLeft  ease-in-out both;
+  -webkit-animation: 1s fadeInLeft  ease-in-out both;
+  -zom-animation: 1s fadeInLeft  ease-in-out both}
+.animate .sec11-3{
+  animation: 1s fadeInRight 1s ease-in-out both;
+  -webkit-animation: 1s fadeInRight 1s ease-in-out both;
+  -zom-animation: 1s fadeInRight 1s ease-in-out both}
+
+.animate .sec11-4{
+  animation: 2s fadeInUp 2s ease-in-out both;
+  -webkit-animation: 2s fadeInUp 2s ease-in-out both;
+  -zom-animation: 2s fadeInUp 2s ease-in-out both}
+
+/*第11屏动画执行 结束*/
+
+
+/*第12屏动画执行 开始*/
+.animate .sec12-1-warp{
+  animation: 4s widthAdd  1.5s ease-in-out both infinite;
+  -webkit-animation: 4s widthAdd  1.5s ease-in-out both infinite;
+  -zom-animation: 4s widthAdd  1.5s ease-in-out both infinite
+/*-webkit-transform-origin: left center;
+transform-origin: left center;*/
+}
+
+.animate .sec12-4{
+  animation: 2s fadeInUp 4.5s ease-in-out both;
+  -webkit-animation: 2s fadeInUp 4.5s ease-in-out both;
+  -zom-animation: 2s fadeInUp 4.5s ease-in-out both}
+
+/*第12屏动画执行 结束*/

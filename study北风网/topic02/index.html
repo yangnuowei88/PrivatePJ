@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta  charset="UTF-8"/>
+    <script type="text/javascript" src="js/demo01.js"></script>
+    <script type="text/javascript" src="js/User.js"></script>
+    <script type="text/javascript">
+       var c =  function testFunc(){
+              var hello = new Hello();
+              alert(typeof (hello));
+         }
+
+        function show(sel){
+            var user = new User();
+            if (sel.selectedIndex>0){
+               /* if (sel.value=="age"){
+                 alert(user.age);
+                 }
+                 if (sel.value=="name"){
+                 alert(user.name);
+                 }*/
+                alert(eval("user."+sel.value));
+            }
+        }
+
+         function show2(sel){
+             var user = new User();
+             if (sel.selectedIndex>0){
+                alert(user[sel.value])
+             }
+         }
+
+         function showInfo(arg01,arg02){
+             alert("hello"+arg01);
+         }
+
+        function Test4(){
+            var obj = new Object();
+            //alert(obj.id+","+obj.name+","+obj.sex)
+            obj.id = 1;
+            obj.name="zhang";
+            obj.sex="boy";
+            //alert(obj.id+","+obj.name+","+obj.sex);
+            obj.alert=function(arg01){
+                alert("ok"+arg01);
+            }
+            obj.show = showInfo;
+
+            obj.alert(" ddddd");
+            console.log(obj);
+            obj.show("aa","bb");
+
+            obj.name="lishi";
+            obj.alert=function(){
+                alert("edit");
+            }
+            alert(obj.name);
+            obj.alert(10);
+
+            //obj.name=undefined;
+            delete obj.name;
+
+            alert(obj.name);
+            console.log(obj);
+        }
+
+        function Test5(){
+          var oInput = document.getElementById("username");
+          oInput.tag="mytest";
+          if (oInput){
+              alert(oInput.tag);
+          }
+
+        }
+
+        function Test6(){
+            var user={
+                name:"jack",   //定义了name属性，初始化为jack
+                favoriteColor:["red","green","black","white"],//定义了颜色喜好数组
+                hello:function(){  //定义了方法hello
+                    alert("hello,"+this.name);
+                },
+                sex:"male"    //定义了性别属性sex，初始化为male
+            }
+
+            alert(user.name);
+
+        }
+
+        function Test7(){
+            var user01 = new User();
+            user01.name = "zhangsan";
+            //user01.alert=function(){
+               // alert("user01 test");
+            //}
+            //alert(user01.name);
+
+            //user01.alert();
+
+            User.prototype.alert=function(){
+                alert("user alert111")
+            }
+
+            user01.alert();
+
+
+            var user02 = new User();
+           // alert(user02.name);
+            user02.alert();
+
+            var user03 = new User();
+            user03.alert();
+
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+   <button onclick="testFunc()">test</button>
+   <button onclick="TestArray1()">TestArray1</button>
+   <button onclick="TestArray2()">TestArray2</button>
+   <button onclick="Test3()">Test3</button>
+   <select onchange="show(this)">
+             <option>请选择需要查看的信息：</option>
+             <option value="age">年龄</option>
+             <option value="name">姓名</option>
+   </select>
+   <button onclick="Test4()">Test4</button>
+
+   <input id="username" type="text" tag="mytest" value="zhangsan"/>
+   <button onclick="Test5()">Test5</button>
+
+   <button onclick="Test6()">Test6</button>
+   <button onclick="Test7()">Test7</button>
+</body>
+</html>
